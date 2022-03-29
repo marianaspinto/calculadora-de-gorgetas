@@ -72,3 +72,9 @@ body {
     color: white;
 
 }
+
+#totalTip {
+    font-size: 20px;
+    margin-top: 2px;
+    text-align: center;
+}
