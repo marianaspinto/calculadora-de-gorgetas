@@ -10,6 +10,19 @@ function calculateTip(event) {
         alert('Por favor preencha os valores')
         return;
     }
+
+    if(numPeople == '' | numPeople <= 1) {
+        numPeople = 1;
+        document.getElementById('each').style.dysplay = 'none'
+        else {
+        document.getElementById('each').style.display = 'block'
+        
+    }
+
+    let total = (bill * serviceQual) / numPeople;
+    total = total.toFixed(2);
+    document.getElementById('tip').innerHTML = total;
+    document.getElementById('totalTip').style.display = "block";
    
 }
 
